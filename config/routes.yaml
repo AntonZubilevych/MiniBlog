@@ -1,0 +1,9 @@
+index:
+   path: /
+   controller: App\Controller\PageController::index
+addProduct:
+      path: /new
+      controller: App\Controller\PageController::new
+page:
+      path: /page/{pageName}
+      controller: App\Controller\PageController::page

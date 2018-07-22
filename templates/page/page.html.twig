@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+    <style>
+        p{
+            padding: 5px;
+            line-height: 1.5;
+            background-color:  #f0f0f5;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+           <div class="col-md-6">
+               <h2>{{ page.title }}</h2>
+           </div>
+
+            <div class="col-md-6 pull-right">
+                {{ page.updated_at|date("m/d/Y")  }}
+            </div>
+
+        </div>
+
+        <div class="row">
+           <div class="col">
+               <p>
+                   {{ page.about_content}}
+               </p>
+           </div>
+            {% if page.show_additional_info %}
+                <div class="col">
+
+                    <p>
+                        {{ page.additional_info}}
+                    </p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+
+
+
+
+
+{% endblock %}
