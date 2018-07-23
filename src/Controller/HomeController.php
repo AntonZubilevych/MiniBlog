@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 
 
-class PageController extends AbstractController
+class HomeController extends AbstractController
 {
 
     public function index()

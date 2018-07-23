@@ -1,9 +1,9 @@
 index:
    path: /
-   controller: App\Controller\PageController::index
+   controller: App\Controller\HomeController::index
 addProduct:
       path: /new
-      controller: App\Controller\PageController::new
+      controller: App\Controller\HomeController::new
 page:
       path: /page/{pageName}
-      controller: App\Controller\PageController::page
+      controller: App\Controller\HomeController::page
